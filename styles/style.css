@@ -1,0 +1,26 @@
+/* Generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pripary-color: #202020;
+    --secondary-color: #b98b15;
+    --tertiary-color: #ebebeb;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--pripary-color);
+    color: var(--tertiary-color);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
