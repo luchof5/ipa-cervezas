@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -64,17 +65,20 @@ header nav ul li a:hover {
 /* Hero */
 #hero {
     margin: auto;
-    padding: 50px;    
+    min-height: 80vh;
 }
 
 #hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    margin: 25px;
 }
 
 .flex-hero {
     display: flex;
     align-items: center;
+    width: 85%;
+    margin: auto;
 }
 
 .flex-hero img {
@@ -89,7 +93,8 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
-    width: 100%;
+    width: 85%;
+    margin: auto;
     height: 120px;
 }
 
@@ -110,6 +115,12 @@ header nav ul li a:hover {
     transform: scale(1.2);
 }
 
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 50px 0;
+}
 
 /* Products */
 .flex-products {
@@ -150,13 +161,13 @@ header nav ul li a:hover {
 /* Contact */
 
 #contact {
-
+    min-height: 50vh;
 }
 
 form {
     background-color: transparent;
     padding: 20px;
-    width: 50%;
+    max-width: 50%;
     margin: auto;
     box-shadow: 0px 0px 55px #0009;
     margin-top: 50px;
@@ -222,4 +233,10 @@ form button:hover {
 
 .init a:hover {
     color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--pripary-color);
 }
