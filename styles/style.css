@@ -83,23 +83,28 @@ header nav ul li a:hover {
 }
 
 .flex-hero img {
+    max-width: 100%;
     width: 500px;
 }
 
 .flex-hero p {
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 .category {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     width: 85%;
     margin: auto;
-    height: 120px;
+    min-height: 120px;
 }
 
 .category__card {
+    width: 200px;
+    min-height: 150px;
     background-color: var(--secondary-color);
     color: var(--pripary-color);
     display: flex;
@@ -110,6 +115,8 @@ header nav ul li a:hover {
     border-radius: 10px;
     font-size: 1.3rem;
     transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: auto;
 }
 
 .category__card:hover {
@@ -229,6 +236,7 @@ form button:hover {
 /* Footer */
 footer {
     position: relative;
+    width: 100%;
 }
 
 .skewed {
@@ -237,26 +245,30 @@ footer {
     right: 0;
     left: 0;
     top: 0;
-    width: 100%;
+    max-width: 100%;
     height: 200px;
     z-index: 0;
-    transform: skewY(6deg);
+    transform: skewY(7deg);
     transform-origin: top right;
     background: var(--alternative-color);
     color: var(--tertiary-color);
 }
 
 .redes {
-    height: 120px;
+    height: 200px;
     width: 100%;
-    padding: 40px;
     position: absolute;
     z-index: 10;
     background-color: var(--alternative-color);
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
     font-size: 1.1rem;
+}
+
+.redes a, .redes h4 {
+    margin-left: 30px;
 }
 
 .whatsapp {
@@ -270,4 +282,31 @@ footer {
     border-radius: 50%;
     color: #25d366;
     font-size: 4rem;
+}
+
+/* Media queries */
+@media (max-width: 920px) {
+    .flex-hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .category,
+    .flex-products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 644px) {
+    .category,
+    .flex-products {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+@media (max-width: 540px) {
+    header nav ul{
+        flex-direction: column;
+        gap: 5px
+    }
 }
