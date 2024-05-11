@@ -66,7 +66,6 @@ header nav ul li a:hover {
 /* Hero */
 #hero {
     margin: auto;
-    min-height: 80vh;
 }
 
 #hero h1 {
@@ -76,6 +75,7 @@ header nav ul li a:hover {
 }
 
 .flex-hero {
+    padding-top: 30px;
     display: flex;
     align-items: center;
     width: 85%;
@@ -84,12 +84,13 @@ header nav ul li a:hover {
 
 .flex-hero img {
     max-width: 100%;
-    width: 500px;
+    height: auto;
+    min-width: 500px;
 }
 
 .flex-hero p {
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .category {
@@ -132,9 +133,9 @@ header nav ul li a:hover {
 
 /* Products */
 #products {
-    margin-top: 100px;
-    min-height: 80vh;
+    margin: 100px 0;
 }
+
 .flex-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -174,8 +175,7 @@ header nav ul li a:hover {
 
 #queries {
     min-height: 60vh;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 form {
@@ -185,7 +185,6 @@ form {
     margin: auto;
     box-shadow: 0px 0px 55px #0009;
     margin-top: 50px;
-    margin-bottom: 50px;
     border-radius: 6px;
 }
 
@@ -207,6 +206,7 @@ form input, textarea {
     border-radius: 4px;
     color: var(--tertiary-color);
     margin: 5px 0;
+    font-family: inherit;
 }
 
 form textarea {
@@ -224,6 +224,7 @@ form button {
     width: 50%;
     margin: 20px auto;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 form button:hover {
@@ -240,13 +241,12 @@ footer {
 }
 
 .skewed {
-    margin-top: auto;
     bottom: 0;
     right: 0;
     left: 0;
     top: 0;
     max-width: 100%;
-    height: 200px;
+    height: 300px;
     z-index: 0;
     transform: skewY(7deg);
     transform-origin: top right;
@@ -255,7 +255,7 @@ footer {
 }
 
 .redes {
-    height: 200px;
+    height: 300px;
     width: 100%;
     position: absolute;
     z-index: 10;
@@ -273,15 +273,19 @@ footer {
 
 .whatsapp {
     position: fixed;
-    bottom: 30px;
+    bottom: 60px;
     right: 80px;
     z-index: 20;
 }
 
 .whatsapp a {
-    border-radius: 50%;
     color: #25d366;
-    font-size: 4rem;
+    font-size: 5rem;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp a i:hover {
+    transform: scale(1.2);
 }
 
 /* Media queries */
@@ -289,6 +293,10 @@ footer {
     .flex-hero {
         flex-direction: column;
         gap: 30px;
+        text-align: justify;
+    }
+    .flex-hero img {
+        min-width: 100%;
     }
     .category,
     .flex-products {
