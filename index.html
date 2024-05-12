@@ -104,11 +104,14 @@
         </section>
         <section id="queries">
             <h2>Consultas</h2>
-            <form action="https://formsubmit.co/luchofurtado5@gmail.com" method="POST">
+            <form
+                action="https://formspree.io/f/xzbnwrpe"
+                method="POST"
+            >
                <div>
                 <label for="name">Nombre</label>
                 <input type="text"
-                id="name"
+                name="name"
                 placeholder="Ingrese su nombre"
                 required
                 />
@@ -116,14 +119,14 @@
                 <div>
                     <label for="email">Correo electrónico</label>
                     <input type="email"
-                    id="email"
+                    name="email"
                     placeholder="Ingrese su email"
                     required
                     />
                 </div>
                 <div>
                     <label for="message">Mensaje</label>
-                    <textarea id="message" placeholder="Ingrese su mensaje">
+                    <textarea name="message" placeholder="Ingrese su mensaje">
                     </textarea>
                 </div>
                 <button type="submit">Enviar</button>
