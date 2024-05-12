@@ -142,6 +142,8 @@ header nav ul li a:hover {
     justify-content: center;
     gap: 20px;
     padding: 20px 50px;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .flex-products .card {
@@ -307,8 +309,7 @@ footer {
 @media (max-width: 644px) {
     .category,
     .flex-products {
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;   
     }
 }
 
@@ -316,5 +317,9 @@ footer {
     header nav ul{
         flex-direction: column;
         gap: 5px
+    }
+    .whatsapp {
+        bottom: 30px;
+        right: 40px;
     }
 }
