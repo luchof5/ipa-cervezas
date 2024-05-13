@@ -48,13 +48,13 @@ header img {
 
 header nav ul {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
 }
 
 header nav ul li a {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 5px 5px;
     border-radius: 5px;
 }
 
@@ -158,6 +158,10 @@ header nav ul li a:hover {
 
 .flex-products .card img {
     width: 150px;
+}
+
+.flex-products .card .price {
+    font-size: 1rem;
 }
 
 .flex-products .card a {
@@ -271,8 +275,8 @@ footer {
 
 .whatsapp {
     position: fixed;
-    bottom: 30px;
-    right: 50px;
+    bottom: 60px;
+    right: 90px;
     z-index: 20;
 }
 
@@ -301,8 +305,8 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     .whatsapp {
-        bottom: 30px;
-        right: 20px;
+        bottom: 50px;
+        right: 40px;
     }
     .whatsapp a {
         font-size: 4rem;
@@ -313,10 +317,6 @@ footer {
     .category,
     .flex-products {
         grid-template-columns: 1fr;   
-    }
-    .whatsapp {
-        bottom: 15px;
-        right: 10px;
     }
     .whatsapp a {
         font-size: 3rem;
@@ -329,8 +329,8 @@ footer {
         gap: 5px
     }
     .whatsapp {
-        bottom: 10px;
-        right: 15px;
+        bottom: 30px;
+        right: 20px;
     }
     .whatsapp a {
         font-size: 3rem;
